@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"> <!--idioma del documento-->
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Pagina test para aprender HTML."/>
-    <meta name="robots" content="index.follow"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css"/>
-    <title>Test Live Server #1</title>
+    <meta charset="UTF-8"> <!--caracteres, españa, argentina UTF-8-->
+    <meta name="description" content="Pagina test para aprender HTML."/> <!--descripcion que se ve cuando se realiza una bsuqueda-->
+    <meta name="robots" content="index.follow"/> <!--meta para que los robots de los buscadores indexen la pagina-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--etiqueta meta para que se vea bien en mobile-->
+    <link rel="stylesheet" href="index.css"/> <!--link al css-->
+    <title>Test Live Server #1</title> <!--titulo de la pagina que se ve en la pestaña-->
 </head>
 <body>
     <header>
-        <h1>Test Live Server</h1>
+        <h1>Test Live Server</h1> <!--encabezado de la pagina-->
     </header>
-    <main>
-        <section>
-            <article>
-                <p>Hola Mundo, probando GIT.</p>
+    <main> <!--contenedor principal de la pagina-->
+        <section> <!--definimos una seccion-->
+            <article> <!--Contenedora de texto-->
+                <p>Hola Mundo, probando GIT.</p> <!--parrafo-->
             </article>
         </section>
         
         <section>
-            <h5>Lista de compras</h5>
+            <h3>Lista de compras</h3>
             <article>
-                <ul>
+                <ul> <!--lista desordenada-->
                     <li>Desayuno</li>
-                    <ol>
+                    <ol> <!--lista ordenada-->
                         
                         <li>Tostadas</li>
                         <li>Casamcrem</li>
-                        <li>Te o Naranja.</li>
+                        <li>Te o Naranja</li>
+                        <li>Cafe</li>
                     
                     </ol>
                     <li>Almuerzo</li>
@@ -41,8 +42,36 @@
                 </ul>      
             </article>
         </section>
+
+        <section>
+            <h3>Pelicula favorita</h3>
+            <article>
+                <figure> <!--etiqueta contenedora de imagenes-->
+                    <img src="./images/HP_comprimida.jpg" alt="Harry Potter 7P2" height="400" width="600">
+                    <figcaption>Harry Potter y las reliquias de la Muerte: parte 2</figcaption>
+                    <!--etiqueta que especifica un footer en la imagen-->
+                </figure>
+            </article>
+        </section>
+
+        <section>
+            <h3>Un poco de cafe</h3>
+            <article>
+                <video controls preload="auto" height="400" width="600"> <!--define estrucutra para video. controls, activa el reproducir, pausa, sonido, barra de progreso, preload auto, provoca que el navegador descargue el video al entrar a la pagina-->
+                    <source src="./videos/Coffee machine in action.mp4"> <!--permite definir el video en multiples formatos-->
+                </video>
+                    <!-- para asignar un tiempo de inicio y fin al video usamos al final del archivo #t=0,18 donde 0 es el segundo que inicia y 18 donde termina en este ejemplo: ./videos/Coffee machine in action.mp4#t=0,18-->        
+            </article>
+        </section>
+
+        <section>
+            <h3>Ingresa al formulario de registro</h3>
+            <article>
+                <a href="form.html">Formulario 2021</a> 
+            </article>
+        </section>
     </main>
-    <footer>
+    <footer> <!--pie de pagina-->
         2021.
     </footer>
 </body>
